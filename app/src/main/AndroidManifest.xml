@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.kolot.x_servicesbeta">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,7 +11,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.XServicesBeta">
-        <activity android:name=".CekPesanan"></activity>
+        <activity
+            android:name=".DetailActivity"
+            android:label="@string/title_activity_detail"
+            android:theme="@style/Theme.XServicesBeta.NoActionBar"></activity>
+        <activity android:name=".CekPesanan" />
         <activity android:name=".BuatPesanan" />
         <activity android:name=".Pemberitahuan" />
         <activity android:name=".Pesan" />
