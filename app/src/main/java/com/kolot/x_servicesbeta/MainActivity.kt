@@ -33,5 +33,9 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, Pemberitahuan::class.java)
             startActivity(intent)
         }
+        BtnCek.setOnClickListener{
+            val intent = Intent(this, CekPesanan::class.java)
+            startActivity(intent)
+        }
     }
 }
