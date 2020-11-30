@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">X-Services Beta</string>
+    <string name="textbuat">Buat Pesanan</string>
+    <string name="textcek">Cek Pesanan</string>
+</resources>
