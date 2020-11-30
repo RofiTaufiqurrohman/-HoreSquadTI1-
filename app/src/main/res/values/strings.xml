@@ -2,4 +2,6 @@
     <string name="app_name">X-Services Beta</string>
     <string name="textbuat">Buat Pesanan</string>
     <string name="textcek">Cek Pesanan</string>
+    <string name="textinfo">Tentang</string>
+    <string name="textakun">Akun</string>
 </resources>
