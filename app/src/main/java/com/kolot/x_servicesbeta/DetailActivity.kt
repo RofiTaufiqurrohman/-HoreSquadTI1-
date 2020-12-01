@@ -27,6 +27,10 @@ class DetailActivity : AppCompatActivity() {
         supportActionBar?.title = myData?.name.toString()
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         tv_detail_description.text = myData?.description.toString()
+        Glide.with(this)
+                .load(myData?.photo.toString())
+                .apply(RequestOptions().override(700, 700))
+                .into(iv_detail_photo)
 
     }
     override fun onSupportNavigateUp(): Boolean {
