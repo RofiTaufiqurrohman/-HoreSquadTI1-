@@ -168,5 +168,6 @@ Penutupan Internet Explorer dan browser non-Chromium Microsoft sebenarnya sudah 
     <string name="maps">Temukan Kita</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="after_register">Sudah memiliki akun? Login Sekarang</string>
 
 </resources>
