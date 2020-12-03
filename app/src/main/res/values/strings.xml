@@ -181,6 +181,7 @@ Penutupan Internet Explorer dan browser non-Chromium Microsoft sebenarnya sudah 
     <string name="nama">Nama</string>
     <string name="sudah_memiliki_akun">Sudah Memiliki Akun?</string>
     <string name="unfixed">Mohon maaf, sistem sedang dalam pengembangan.</string>
-    <string name="ver">v.0.1 Beta</string>
+    <string name="ver">©HeroSquad</string>
+    <string name="herosquad">©HeroSquad</string>
 
 </resources>

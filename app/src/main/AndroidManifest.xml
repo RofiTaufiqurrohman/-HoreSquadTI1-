@@ -16,6 +16,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.XServicesBeta">
+        <activity android:name=".TentangKami"></activity>
+        <activity android:name=".com.kolot.x_servicesbeta.Pemberitahuan" />
         <activity
             android:name=".LayarSplash"
             android:theme="@style/Theme.XServicesBeta.NoActionBar">
@@ -27,7 +29,7 @@
         </activity>
         <activity
             android:name=".LoginActivity"
-            android:theme="@style/Theme.XServicesBeta.NoActionBar"></activity>
+            android:theme="@style/Theme.XServicesBeta.NoActionBar" />
         <activity
             android:name=".RegisterActivity"
             android:theme="@style/Theme.XServicesBeta.NoActionBar" />

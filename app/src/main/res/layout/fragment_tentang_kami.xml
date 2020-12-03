@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LayarSplash">
+    tools:context=".TentangKami">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -23,10 +23,10 @@
 
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/textView2"
         android:layout_gravity="bottom|center_horizontal"
         android:layout_width="match_parent"
         android:layout_height="22dp"
-        android:text="@string/herosquad"
+        android:text="v.0.1 Beta"
         android:textAlignment="center" />
 </FrameLayout>
