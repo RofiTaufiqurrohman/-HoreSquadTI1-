@@ -16,8 +16,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.XServicesBeta">
-        <activity android:name=".LoginActivity"></activity>
-        <activity android:name=".RegisterActivity"></activity>
+        <activity
+            android:name=".LayarSplash"
+            android:theme="@style/Theme.XServicesBeta.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/Theme.XServicesBeta.NoActionBar"></activity>
+        <activity
+            android:name=".RegisterActivity"
+            android:theme="@style/Theme.XServicesBeta.NoActionBar" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -58,13 +71,7 @@
         <activity android:name=".Berita" />
         <activity
             android:name=".MainActivity"
-            android:theme="@style/Theme.XServicesBeta.NoActionBar">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:theme="@style/Theme.XServicesBeta.NoActionBar" />
     </application>
 
 </manifest>
