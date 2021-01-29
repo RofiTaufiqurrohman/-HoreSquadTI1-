@@ -3,55 +3,39 @@ package com.kolot.x_servicesbeta
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
 import com.kolot.x_servicesbeta.databinding.ActivityMainBinding
 import kotlinx.android.synthetic.main.activity_main.*
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(), View.OnClickListener {
     private lateinit var auth: FirebaseAuth
     private lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
         auth = Firebase.auth
+
         val currentUser = auth.currentUser
+
+        binding.BtnPengaturan.setOnClickListener(this)
+        binding.BtnPesan.setOnClickListener(this)
+        binding.BtnHome.setOnClickListener(this)
+        binding.BtnBerita.setOnClickListener(this)
+        binding.BtnPemberitahuan.setOnClickListener(this)
+        binding.BtnBuat.setOnClickListener(this)
+        binding.BtnCek.setOnClickListener(this)
+
         if (currentUser == null) {
             val intent = Intent(this@MainActivity, SignInActivity::class.java)
             startActivity(intent)
             finish()
-        BtnPesan.setOnClickListener{
-            val intent = Intent(this, Pesan::class.java)
-            startActivity(intent)
-        }
-        BtnPengaturan.setOnClickListener{
-            val intent = Intent(this, Pengaturan::class.java)
-            startActivity(intent)
-        }
-        BtnHome.setOnClickListener{
-            val intent = Intent(this, MainActivity::class.java)
-            startActivity(intent)
-        }
-        BtnBerita.setOnClickListener{
-            val intent = Intent(this, Berita::class.java)
-            startActivity(intent)
-        }
-        BtnPemberitahuan.setOnClickListener{
-            val intent = Intent(this, Pemberitahuan::class.java)
-            startActivity(intent)
-        }
-        BtnBuat.setOnClickListener{
-            val intent = Intent(this, Pemberitahuan::class.java)
-            startActivity(intent)
-        }
-        BtnCek.setOnClickListener{
-            val intent = Intent(this, CekPesanan::class.java)
-            startActivity(intent)
         }
     }
-}
     public override fun onStart() {
         super.onStart()
         val currentUser = auth.currentUser
@@ -59,6 +43,39 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this@MainActivity, SignInActivity::class.java)
             startActivity(intent)
             finish()
+        }
+    }
+
+    override fun onClick(v: View) {
+        when (v.id) {
+            R.id.BtnPengaturan -> {
+                val intent = Intent(this@MainActivity, Pengaturan::class.java)
+                startActivity(intent)
+            }
+            R.id.BtnPesan -> {
+                val intent = Intent(this@MainActivity, Pesan::class.java)
+                startActivity(intent)
+            }
+            R.id.BtnHome -> {
+                val intent = Intent(this@MainActivity, MainActivity::class.java)
+                startActivity(intent)
+            }
+            R.id.BtnBerita -> {
+                val intent = Intent(this@MainActivity, Berita::class.java)
+                startActivity(intent)
+            }
+            R.id.BtnPemberitahuan -> {
+                val intent = Intent(this@MainActivity, Pemberitahuan::class.java)
+                startActivity(intent)
+            }
+            R.id.BtnBuat -> {
+                val intent = Intent(this@MainActivity, BuatPesanan::class.java)
+                startActivity(intent)
+            }
+            R.id.BtnCek -> {
+                val intent = Intent(this@MainActivity, CekPesanan::class.java)
+                startActivity(intent)
+            }
         }
     }
 }

@@ -9,13 +9,17 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.kolot.x_servicesbeta.adapter.CardViewMyDataAdapter
 import com.kolot.x_servicesbeta.adapter.GridMyDataAdapter
 import com.kolot.x_servicesbeta.adapter.ListMyDataAdapter
+import com.kolot.x_servicesbeta.databinding.ActivityBeritaBinding
+import com.kolot.x_servicesbeta.databinding.ActivityPengaturanBinding
 import kotlinx.android.synthetic.main.activity_berita.*
 
 class Berita : AppCompatActivity() {
     private val list = ArrayList<MyData>()
+    private lateinit var binding: ActivityBeritaBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_berita)
+        binding = ActivityBeritaBinding.inflate(layoutInflater)
+        setContentView(binding.root)
         rv_mydata.setHasFixedSize(true)
         list.addAll(getListMyDatas())
         showRecyclerList()

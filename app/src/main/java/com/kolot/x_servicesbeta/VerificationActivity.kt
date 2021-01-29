@@ -1,5 +1,6 @@
 package com.kolot.x_servicesbeta
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.TextUtils
@@ -19,7 +20,6 @@ class VerificationActivity : AppCompatActivity(), View.OnClickListener {
     private lateinit var binding: ActivityVerificationBinding
     private var verificationInProgress = false
     private var storedVerificationId: String? = ""
-    private var prefixPhoneNumber: String? = "+62"
     private lateinit var resendToken: PhoneAuthProvider.ForceResendingToken
     private lateinit var callbacks: PhoneAuthProvider.OnVerificationStateChangedCallbacks
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -69,6 +69,8 @@ class VerificationActivity : AppCompatActivity(), View.OnClickListener {
             .addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {
                     finish()
+                    val intent = Intent(this@VerificationActivity, MainActivity::class.java)
+                    startActivity(intent)
                 } else {
                     if (task.exception is FirebaseAuthInvalidCredentialsException) {
                         binding.inputVerifyCode.error = "Invalid code."
