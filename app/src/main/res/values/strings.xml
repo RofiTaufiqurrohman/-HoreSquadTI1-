@@ -9,6 +9,15 @@
     <string name="tampil_card_view">Tampilan Cardview</string>
     <string name="textakun">Akun</string>
     <string name="textinfo">Tentang</string>
+    <string name="title">Nama</string>
+    <string name="category">Jenis Kelamin</string>
+    <string name="agama">Agama</string>
+    <string name="date">Tanggal</string>
+    <string name="submit">OK</string>
+    <string name="makan">Pekerjaan</string>
+    <string name="minum">Alamat</string>
+    <string name="fajar">Fajar Al Rasyid</string>
+    <string name="tambah">Simpan</string>
     <string-array name="data_name">
         <item>Bayar Biaya Konsultasi Medis Online di KlikDokter Bisa Pakai Uang Digital Dana</item>
         <item>Cara Daftar IMEI Ponsel yang Dibeli dari Luar Negeri agar Terdaftar di Kemenperin</item>
@@ -187,5 +196,6 @@ Penutupan Internet Explorer dan browser non-Chromium Microsoft sebenarnya sudah 
     <string name="txt_message">Isi Pesan</string>
     <string name="close">Tutup</string>
     <string name="incoming_message">Incoming Message</string>
+    <string name="delete">Hapus</string>
 
 </resources>
