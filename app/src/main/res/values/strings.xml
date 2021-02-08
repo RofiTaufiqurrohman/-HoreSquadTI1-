@@ -183,5 +183,9 @@ Penutupan Internet Explorer dan browser non-Chromium Microsoft sebenarnya sudah 
     <string name="unfixed">Mohon maaf, sistem sedang dalam pengembangan.</string>
     <string name="ver">©HeroSquad</string>
     <string name="herosquad">©HeroSquad</string>
+    <string name="coming_from">Pesan Dari</string>
+    <string name="txt_message">Isi Pesan</string>
+    <string name="close">Tutup</string>
+    <string name="incoming_message">Incoming Message</string>
 
 </resources>

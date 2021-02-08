@@ -20,6 +20,6 @@
     </style>
 
     <style name="Theme.XServicesBeta.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
-
+    <style name="SmsReceiverTheme" parent="Theme.AppCompat.Light.Dialog"/>
     <style name="Theme.XServicesBeta.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>
