@@ -7,6 +7,7 @@ import android.view.View
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
+import com.kolot.x_servicesbeta.com.kolot.x_servicesbeta.bantuan.REQUEST_ADD
 import com.kolot.x_servicesbeta.databinding.ActivityMainBinding
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -70,7 +71,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             }
             R.id.BtnBuat -> {
                 val intent = Intent(this@MainActivity, BuatPesanan::class.java)
-                startActivity(intent)
+                startActivityForResult(intent, REQUEST_ADD)
             }
             R.id.BtnCek -> {
                 val intent = Intent(this@MainActivity, CekPesanan::class.java)

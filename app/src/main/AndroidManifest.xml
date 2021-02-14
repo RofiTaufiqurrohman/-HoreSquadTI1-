@@ -70,11 +70,9 @@
             android:label="@string/title_activity_detail"
             android:theme="@style/Theme.XServicesBeta.NoActionBar" />
         <activity
-            android:name=".CekPesanan"
-            android:theme="@style/Theme.XServicesBeta.NoActionBar" />
+            android:name=".CekPesanan" />
         <activity
-            android:name=".BuatPesanan"
-            android:theme="@style/Theme.XServicesBeta.NoActionBar" />
+            android:name=".BuatPesanan" />
         <activity
             android:name=".Pemberitahuan"
             android:theme="@style/Theme.XServicesBeta.NoActionBar" />
