@@ -51,7 +51,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 startActivity(intent)
             }
             R.id.BtnExit -> {
-                finish();
                 System.exit(0)
             }
             R.id.BtnPesan -> {
