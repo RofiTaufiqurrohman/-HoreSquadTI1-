@@ -24,10 +24,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         val currentUser = auth.currentUser
 
         binding.BtnPengaturan.setOnClickListener(this)
-        binding.BtnPesan.setOnClickListener(this)
-        binding.BtnHome.setOnClickListener(this)
         binding.BtnBerita.setOnClickListener(this)
-        binding.BtnPemberitahuan.setOnClickListener(this)
         binding.BtnBuat.setOnClickListener(this)
         binding.BtnCek.setOnClickListener(this)
 
@@ -53,20 +50,16 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 val intent = Intent(this@MainActivity, Pengaturan::class.java)
                 startActivity(intent)
             }
+            R.id.BtnExit -> {
+                finish();
+                System.exit(0)
+            }
             R.id.BtnPesan -> {
                 val intent = Intent(this@MainActivity, Pesan::class.java)
                 startActivity(intent)
             }
-            R.id.BtnHome -> {
-                val intent = Intent(this@MainActivity, MainActivity::class.java)
-                startActivity(intent)
-            }
             R.id.BtnBerita -> {
                 val intent = Intent(this@MainActivity, Berita::class.java)
-                startActivity(intent)
-            }
-            R.id.BtnPemberitahuan -> {
-                val intent = Intent(this@MainActivity, Pemberitahuan::class.java)
                 startActivity(intent)
             }
             R.id.BtnBuat -> {

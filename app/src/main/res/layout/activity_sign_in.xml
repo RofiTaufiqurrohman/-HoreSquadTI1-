@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_layout"
     android:layout_width="match_parent"
+    android:background="@color/amoled"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:weightSum="4">
@@ -23,34 +24,23 @@
 
         <ImageView
             android:id="@+id/ivIcon"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintBottom_toTopOf="@+id/tvLogin"
+            android:layout_width="390dp"
+            android:layout_height="144dp"
+            android:layout_marginTop="80dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@mipmap/ic_launcher" />
-
-        <TextView
-            android:id="@+id/tvLogin"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="44dp"
-            android:layout_marginBottom="36dp"
-            android:text="Login"
-            android:textSize="24sp"
-            app:layout_constraintBottom_toTopOf="@+id/inputEmail"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/ivIcon" />
+            app:srcCompat="@drawable/judul" />
 
         <EditText
             android:id="@+id/inputPassword"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
+            android:background="@drawable/formtext"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
             android:ems="10"
+            android:textAlignment="center"
             android:hint="Password"
             android:inputType="textPassword"
             app:layout_constraintBottom_toTopOf="@+id/btnSign"
@@ -59,13 +49,18 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/inputEmail" />
 
-        <Button
+        <TextView
             android:id="@+id/btnSign"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="40dp"
+            android:gravity="center"
             android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/buttonr"
             android:layout_marginEnd="16dp"
-            android:text="Sign In"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:text="Masuk"
             app:layout_constraintBottom_toTopOf="@+id/tvTextAccount"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
@@ -75,24 +70,29 @@
         <EditText
             android:id="@+id/inputEmail"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="50dp"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
+            android:textAlignment="center"
             android:ems="10"
+            android:background="@drawable/formtext"
             android:hint="Email"
             android:inputType="textEmailAddress"
             app:layout_constraintBottom_toTopOf="@+id/inputPassword"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvLogin" />
+            app:layout_constraintTop_toBottomOf="@+id/ivIcon" />
 
         <TextView
             android:id="@+id/tvSignUp"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="Sign Up"
+            android:textSize="18sp"
+            android:text="Daftar"
+            android:textColor="@color/idtext"
             android:textStyle="bold"
             app:layout_constraintBottom_toTopOf="@+id/tvConneting"
             app:layout_constraintEnd_toEndOf="parent"
@@ -102,10 +102,11 @@
 
         <TextView
             android:id="@+id/tvTextAccount"
-            android:layout_width="wrap_content"
-            android:layout_height="21dp"
+            android:layout_width="188dp"
+            android:layout_height="31dp"
             android:gravity="center"
-            android:text="Don't have an account?"
+            android:text="Belum Mempunyai Akun?"
+            android:textColor="@color/idtext"
             app:layout_constraintBottom_toTopOf="@+id/tvSignUp"
             app:layout_constraintEnd_toEndOf="@+id/btnSign"
             app:layout_constraintHorizontal_bias="0.497"
@@ -117,33 +118,34 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="Connect Using"
+            android:textColor="@color/idtext"
+            android:text="Atau Daftar Dengan"
             app:layout_constraintBottom_toTopOf="@+id/btnEmail"
             app:layout_constraintEnd_toEndOf="@+id/btnSign"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/btnSign"
             app:layout_constraintTop_toBottomOf="@+id/tvSignUp" />
 
-        <ImageButton
+        <ImageView
             android:id="@+id/btnEmail"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/btnPhone"
             app:layout_constraintStart_toStartOf="@+id/tvConneting"
             app:layout_constraintTop_toBottomOf="@+id/tvConneting"
-            app:srcCompat="@drawable/ic_baseline_email_24" />
+            app:srcCompat="@drawable/gugel" />
 
-        <ImageButton
+        <ImageView
             android:id="@+id/btnPhone"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:layout_marginStart="118dp"
             app:layout_constraintBottom_toBottomOf="@+id/btnEmail"
             app:layout_constraintEnd_toEndOf="@+id/tvConneting"
             app:layout_constraintStart_toEndOf="@+id/btnEmail"
             app:layout_constraintTop_toTopOf="@+id/btnEmail"
             app:layout_constraintVertical_bias="0.0"
-            app:srcCompat="@drawable/ic_baseline_local_phone_24" />
+            app:srcCompat="@drawable/telepon" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </LinearLayout>

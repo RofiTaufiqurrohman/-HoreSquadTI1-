@@ -72,6 +72,7 @@ class BuatPesanan : AppCompatActivity(), View.OnClickListener {
         supportActionBar?.title = actionBarTitle
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         binding.btnSubmit.text = btnTitle
+        binding.btnBatal.setOnClickListener(this)
         binding.btnSubmit.setOnClickListener(this)
     }
 
@@ -118,6 +119,7 @@ class BuatPesanan : AppCompatActivity(), View.OnClickListener {
     }
 
     override fun onClick(view: View) {
+
         if (view.id == R.id.btn_submit) {
             val title = binding.edtTitle.text.toString().trim()
             val description = binding.edtDescription.text.toString().trim()
@@ -167,6 +169,7 @@ class BuatPesanan : AppCompatActivity(), View.OnClickListener {
 
 
             }
+
         }
     }
 

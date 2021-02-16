@@ -200,6 +200,6 @@ Penutupan Internet Explorer dan browser non-Chromium Microsoft sebenarnya sudah 
     <string name="category_service">Kategori Service</string>
     <string name="description_kerusakan">Silahkan Tambahkan Deskripsi Kerusakan</string>
     <string name="submit_pesan">Pesan</string>
-    <string name="title_Kerusakan">Alamat</string>
+    <string name="title_Kerusakan">Masukan Alaman Tujuan</string>
 
 </resources>

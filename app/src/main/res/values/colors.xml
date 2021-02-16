@@ -8,6 +8,8 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="gray">#6d6d6d</color>
+    <color name='idtext'>#cccccc</color>
+    <color name="blackTextColor">#000</color>
     <color name="grey">#e0e0e0</color>
     <color name='amoled'>#000000</color>
 </resources>

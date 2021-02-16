@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/amoled"
     android:fitsSystemWindows="true">
     <ProgressBar
         android:id="@+id/progressbar"
@@ -12,8 +13,7 @@
         android:visibility="invisible"
         app:layout_anchor="@id/layout"
         app:layout_anchorGravity="center" />
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
+    <LinearLayout
         android:id="@+id/layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -24,6 +24,7 @@
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:layout_marginBottom="16dp">
             <EditText
                 android:id="@+id/edt_title"
@@ -40,10 +41,10 @@
             <EditText
                 android:id="@+id/edt_description"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="400dp"
                 android:hint="@string/description_kerusakan"
                 android:inputType="textCapSentences"
-                android:maxLines="1" />
+                android:maxLines="10" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <TextView
@@ -57,11 +58,35 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
-        <Button
+        <TextView
             android:id="@+id/btn_submit"
-            style="@style/Base.Widget.AppCompat.Button.Colored"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/submit_pesan" />
+            android:layout_height="48dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/buttonr"
+            android:gravity="center"
+            android:text="@string/submit_pesan"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edt_category" />
+        <TextView
+            android:id="@+id/btn_batal"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:gravity="center"
+            android:text="Batal"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/BtnPesan" />
     </LinearLayout>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

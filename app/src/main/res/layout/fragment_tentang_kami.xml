@@ -24,9 +24,9 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_gravity="bottom|center_horizontal"
         android:layout_width="match_parent"
         android:layout_height="22dp"
-        android:text="v.0.1 Beta"
+        android:layout_gravity="bottom|center_horizontal"
+        android:text="v.0.9 Initial Release"
         android:textAlignment="center" />
 </FrameLayout>

@@ -34,10 +34,14 @@
         <activity
             android:name=".SmsReceiverActivity"
             android:theme="@style/SmsReceiverTheme" />
-        <activity android:name=".PhoneAuthActivity" />
-        <activity android:name=".PengaturanUserActivity" />
-        <activity android:name=".SignUpActivity" />
-        <activity android:name=".SignInActivity" />
+        <activity android:name=".PhoneAuthActivity"
+            android:theme="@style/Theme.XServicesBeta.NoActionBar"/>
+        <activity android:name=".PengaturanUserActivity"
+            android:theme="@style/Theme.XServicesBeta.NoActionBar"/>
+        <activity android:name=".SignUpActivity"
+            android:theme="@style/Theme.XServicesBeta.NoActionBar"/>
+        <activity android:name=".SignInActivity"
+            android:theme="@style/Theme.XServicesBeta.NoActionBar"/>
         <activity
             android:name=".LayarSplash"
             android:theme="@style/Theme.XServicesBeta.NoActionBar">
@@ -70,7 +74,8 @@
             android:label="@string/title_activity_detail"
             android:theme="@style/Theme.XServicesBeta.NoActionBar" />
         <activity
-            android:name=".CekPesanan" />
+            android:name=".CekPesanan"
+            android:theme="@style/Theme.XServicesBeta.NoActionBar"/>
         <activity
             android:name=".BuatPesanan" />
         <activity
@@ -85,7 +90,7 @@
         <activity android:name=".Berita" />
         <activity
             android:name=".MainActivity"
-            android:theme="@style/Theme.XServicesBeta.NoActionBar" />
+            android:theme="@style/Theme.XServicesBeta.NoActionBar"/>
     </application>
 
 </manifest>
