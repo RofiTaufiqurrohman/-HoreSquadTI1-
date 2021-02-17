@@ -1,7 +1,9 @@
 package com.kolot.x_servicesbeta
 
+import android.app.Activity
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.Parcelable
 
 import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.GoogleMap
@@ -39,9 +41,9 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
         mMap = googleMap
 
         // Add a marker in Sydney and move the camera
-        val mekah = LatLng(21.4359571,39.7064606)
-        mMap.addMarker(MarkerOptions().position(mekah).title("Marker in Sydney"))
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(mekah))
+        val Location = LatLng(24.4708141,39.3373562)
+        mMap.addMarker(MarkerOptions().position(Location).title("Lokasi Kami"))
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(Location,16.0f))
     }
 
 
