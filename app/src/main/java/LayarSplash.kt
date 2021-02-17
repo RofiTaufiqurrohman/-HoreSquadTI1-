@@ -13,6 +13,6 @@ class LayarSplash : AppCompatActivity() {
         Handler(Looper.getMainLooper()).postDelayed({
             startActivity(Intent(this,MainActivity::class.java))
             finish()
-        },300)
+        },2000)
     }
 }
