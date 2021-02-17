@@ -10,6 +10,7 @@ import com.google.firebase.ktx.Firebase
 import com.kolot.x_servicesbeta.com.kolot.x_servicesbeta.bantuan.REQUEST_ADD
 import com.kolot.x_servicesbeta.databinding.ActivityMainBinding
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlin.system.exitProcess
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
     private lateinit var auth: FirebaseAuth
@@ -26,6 +27,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         binding.BtnPengaturan.setOnClickListener(this)
         binding.BtnBerita.setOnClickListener(this)
         binding.BtnBuat.setOnClickListener(this)
+        binding.BtnExit.setOnClickListener(this)
         binding.BtnCek.setOnClickListener(this)
 
         if (currentUser == null) {
@@ -51,7 +53,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 startActivity(intent)
             }
             R.id.BtnExit -> {
-                System.exit(0)
+                this@MainActivity.finish()
+                exitProcess(0)
             }
             R.id.BtnPesan -> {
                 val intent = Intent(this@MainActivity, Pesan::class.java)
@@ -71,4 +74,5 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             }
         }
     }
+
 }

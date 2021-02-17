@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/amoled"
     android:id="@+id/frame_container"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 <LinearLayout
@@ -14,18 +15,20 @@
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toTopOf="parent">
 
-    <Button
+    <TextView
         android:id="@+id/maps"
         android:layout_width="183dp"
         android:layout_height="49dp"
         android:layout_gravity="center"
         android:layout_marginTop="660dp"
         android:layout_marginBottom="60dp"
-        android:background="@null"
+        android:background="@drawable/buttonr"
         android:text="@string/maps"
+        android:gravity="center"
         android:textAlignment="center"
+        android:textColor="@color/white"
         android:textAllCaps="false"
-        android:textSize="15sp"
+        android:textSize="25sp"
         tools:layout_editor_absoluteX="114dp"
         tools:layout_editor_absoluteY="674dp" />
 

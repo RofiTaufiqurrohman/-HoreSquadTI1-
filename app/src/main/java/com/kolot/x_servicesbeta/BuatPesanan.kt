@@ -27,6 +27,7 @@ import com.kolot.x_servicesbeta.com.kolot.x_servicesbeta.bantuan.RESULT_UPDATE
 import com.kolot.x_servicesbeta.com.kolot.x_servicesbeta.data.Pesanan
 import com.kolot.x_servicesbeta.databinding.ActivityBuatPesananBinding
 import kotlinx.android.synthetic.main.activity_buat_pesanan.*
+import kotlin.system.exitProcess
 
 class BuatPesanan : AppCompatActivity(), View.OnClickListener {
     private lateinit var auth: FirebaseAuth
@@ -119,8 +120,8 @@ class BuatPesanan : AppCompatActivity(), View.OnClickListener {
     }
 
     override fun onClick(view: View) {
-
         if (view.id == R.id.btn_submit) {
+
             val title = binding.edtTitle.text.toString().trim()
             val description = binding.edtDescription.text.toString().trim()
             if (title.isEmpty()) {
